@@ -1,0 +1,28 @@
+.hv:hover .card-img-bottom{
+    opacity: 0.5;
+}
+.hv:hover{
+    background-image: url(../../assets/Webp.net-resizeimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.playButton{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+.card-content{
+    height: 220px;
+    width: 250px;
+    margin: 3%;
+}
+/* .card-header{
+    width: 250px;
+    height: 65px;
+} */
+
+.play:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}

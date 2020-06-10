@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row" style="margin-top: 4%;">
+        <div *ngFor="let li of list">
+            <div class="d-flex">
+                <div class="card" style="margin: 3%;background-color: rgba(45, 45, 45,0.85);">
+                    <div class="card-header" style="height: 65px;">
+                        <div *ngIf="li.status=='Finished';else elseBlock">
+                            <p style="color:white;" (click)="openVideo(li.assetId)"><span
+                                    class="play">{{li.name}}</span></p>
+                        </div>
+                        <ng-template #elseBlock>
+                            <p style="color:white;"><span>{{li.name}}</span></p>
+                        </ng-template>
+
+                    </div>
+                    <div class="hv">
+                        <img [src]="li.thumbnailUrl" class="card-img-bottom" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
